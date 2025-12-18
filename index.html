@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIMS Procurement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'Inter', 'sans-serif'],
+              display: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#137fec',
+                50: '#eef7ff',
+                100: '#d9edff',
+                200: '#bcdfff',
+                300: '#8ecaff',
+                400: '#59adff',
+                500: '#137fec', // Brand Blue
+                600: '#0066cc',
+                700: '#0052a3',
+                800: '#004585',
+                900: '#063a6b',
+              },
+              teal: {
+                DEFAULT: '#0D9488',
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                500: '#14b8a6',
+                600: '#0d9488', // Secondary Brand Color
+                700: '#0f766e',
+              },
+              surface: {
+                light: '#ffffff',
+                dim: '#f8fafc',
+                dark: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: 'FILL' 1;
+      }
+      /* Hide scrollbar for clean UI but allow scroll */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <!-- <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.0",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script> -->
+</head>
+  <body class="bg-gray-50 text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
