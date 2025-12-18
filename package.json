@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run dev",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -23,3 +24,4 @@
     "vite": "^6.2.0"
   }
 }
+
